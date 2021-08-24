@@ -1,0 +1,6 @@
+create file with class
+add package name to file
+
+javac . dates_class.java
+
+-> creates folder with dates_class.class file
