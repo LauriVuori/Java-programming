@@ -50,6 +50,7 @@ public class ArrayListexe {
                 System.out.println("Date not found");
                 found = 0;
             }
+            scanner_obj.close();
         }
 
         // System.out.println(dates_array);
