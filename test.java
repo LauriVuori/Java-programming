@@ -1,12 +1,19 @@
-public class IntegerParseIntExample1 {  
-    public static void main(String[] args) {
-        String date = "13.08.2016";
-        String[] values = date.split("\\.");
-        int day = Integer.parseInt(values[0]);
-        int month = Integer.parseInt(values[1]);
-        int year = Integer.parseInt(values[2]);
-        System.out.println(day);
-        System.out.println(month);
-        System.out.println(year);
-    }  
-}  
+import java.io.*;
+
+public class Lasku {
+    public static void main(String args[]) {
+        BufferedReader in = new BufferedReader(new InputStreamReader(System.in));
+        int luku1, luku2, sum;
+        try {
+            System.out.print("Anna ensimmäinen luku:");
+            luku1 = Integer.parseInt(in.readLine());
+            System.out.print("Anna toinen luku:");
+            luku2 = Integer.parseInt(in.readLine());
+            sum = luku1 + luku2;
+            System.out.println("Antamiesi lukujen summa on " + sum);
+        } catch (Exception e) {
+            System.out.println("Antamasi syöte oli virheellinen...");
+        }
+
+    }
+}
